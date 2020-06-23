@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h2>go through a maze</h2>  
+        <textarea id="textarea" rows="4" cols="40" 
+        placeholder="down 1 step, right 1 step, up 1 step, right 3 steps"></textarea>
+        <input id="inputButton" type="button" value="submit" 
+        onclick="readAndMove()">
+    </div>
+    <br/>
+
+    <div id="outerDiv">
+        <div id="innerDiv">
+                <img id="maze" src="Maze_50x50.png"/>
+            <!-- generate a canvas and name it, so that js can communicate with -->
+                <canvas id="canvas1" width="1000" height="1000"></canvas>            
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js" ></script>
+</body>
+</html>

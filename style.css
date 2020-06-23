@@ -1,0 +1,13 @@
+#header{
+    text-align: center;
+}
+
+#bigDiv{
+    position: relative;
+}
+#maze{
+    position: absolute;
+} 
+#canvas1{
+    position: absolute;
+}
