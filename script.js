@@ -8,10 +8,6 @@ ctx.moveTo(x, y); // 移到迷宮出口
 ctx.strokeStyle = "#0000FF"; // 設定線條顏色
 ctx.lineWidth = 1; //線條寬度
 
-
-// down 1 step, right 1 step, up 1 step, right 3 steps
-// down 1 step, left 1 step
-
 // 讀textarea的文字，拆成array
 const readAndMove = () => {
     try{
