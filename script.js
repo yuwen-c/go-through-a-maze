@@ -29,7 +29,6 @@ const readAndMove = () => {
         // 判斷方向是否「拼字錯誤」，才畫線及清空
         let flag = true; 
         filteredArr.forEach(element => {
-            console.log("element[0]", element[0]);
             if(element[0] === "up" || element[0] === "down" || element[0] === "left" || element[0] === "right"){
 
             }
