@@ -10,11 +10,13 @@ ctx.lineWidth = 1; //線條寬度
 
 // 讀textarea的文字，拆成array
 const readAndMove = () => {
-    try{
-        const text = document.getElementById("textarea").value;
-        const textArr = text.split(", "); 
+    try{ // 在末端加上enter，可以用filter把length=3的挑出來
+        // 但是如果是中間忘記空格，就會沒有被檢查到 如down1 step
+        const text = document.getElementById("textarea").value.toLowerCase();
+        const textArr = text.split("\n"); // 以enter換行
         const splitedArr = textArr.map(item => item.split(" "));
-        splitedArr.forEach(element => {
+        const filteredArr = splitedArr.filter(item => item.length !== 1);
+        filteredArr.forEach(element => {
             // 判斷指令的逗號及空格是否正確
             if (element.length === 3){
 
@@ -23,7 +25,7 @@ const readAndMove = () => {
                 // 直接終止function
                 throw Error("please check the format")
             }
-        })
+         })
         // 判斷方向是否「拼字錯誤」，才畫線及清空
         let flag = true; 
         splitedArr.forEach(element => {
