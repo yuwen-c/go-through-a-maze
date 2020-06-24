@@ -13,9 +13,12 @@ const readAndMove = () => {
     try{ // 在末端加上enter，可以用filter把length=3的挑出來
         // 但是如果是中間忘記空格，就會沒有被檢查到 如down1 step
         const text = document.getElementById("textarea").value.toLowerCase();
+        console.log("text", text);
         const textArr = text.split("\n"); // 以enter換行
+        console.log("textArr", textArr);
         const splitedArr = textArr.map(item => item.split(" "));
         const filteredArr = splitedArr.filter(item => item.length !== 1);
+        console.log("filteredArr", filteredArr)
         filteredArr.forEach(element => {
             // 判斷指令的逗號及空格是否正確
             if (element.length === 3){
@@ -28,7 +31,8 @@ const readAndMove = () => {
          })
         // 判斷方向是否「拼字錯誤」，才畫線及清空
         let flag = true; 
-        splitedArr.forEach(element => {
+        filteredArr.forEach(element => {
+            console.log("element[0]", element[0]);
             if(element[0] === "up" || element[0] === "down" || element[0] === "left" || element[0] === "right"){
 
             }
@@ -37,7 +41,7 @@ const readAndMove = () => {
             }
         })
         if(flag){
-            splitedArr.forEach(element => {
+            filteredArr.forEach(element => {
                 calculate(element[0], element[1]); 
                 document.getElementById("textarea").value = ""; 
                 ctx.lineTo(x, y); // 移到目標座標
