@@ -13,12 +13,9 @@ const readAndMove = () => {
     try{ // 在末端加上enter，可以用filter把length=3的挑出來
         // 但是如果是中間忘記空格，就會沒有被檢查到 如down1 step
         const text = document.getElementById("textarea").value.toLowerCase();
-        console.log("text", text);
         const textArr = text.split("\n"); // 以enter換行
-        console.log("textArr", textArr);
         const splitedArr = textArr.map(item => item.split(" "));
         const filteredArr = splitedArr.filter(item => item.length !== 1);
-        console.log("filteredArr", filteredArr)
         filteredArr.forEach(element => {
             // 判斷指令的逗號及空格是否正確
             if (element.length === 3){
