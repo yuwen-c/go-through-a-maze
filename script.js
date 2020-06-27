@@ -1,21 +1,47 @@
-const unit = 16; // 走一步多少px
-let [x, y] = [393, 10]; // 原點
+ const unit = 16; // 走一步多少px
+let [x, y] = [393, 9]; // 原點
 
 const canvas = document.getElementById("canvas1"); // 抓到畫布
 const ctx = canvas.getContext("2d"); // 做出2d繪畫物件
-ctx.beginPath(); // 開始繪畫路徑
-ctx.moveTo(x, y); // 移到迷宮出口
-ctx.strokeStyle = "#0000FF"; // 設定線條顏色
-ctx.lineWidth = 1; //線條寬度
+
+
+// ctx.beginPath(); // 開始繪畫路徑
+// ctx.moveTo(x, y); // 移到迷宮出口
+// ctx.strokeStyle = "#0000ff"; // 設定線條顏色
+// ctx.lineWidth = 5; //線條寬度
+
+
 
 // 讀textarea的文字，拆成array
 const readAndMove = () => {
     try{ // 在末端加上enter，可以用filter把length=3的挑出來
         // 但是如果是中間忘記空格，就會沒有被檢查到 如down1 step
-        const text = document.getElementById("textarea").value.toLowerCase();
+
+
+		ctx.beginPath(); // 開始繪畫路徑
+		ctx.moveTo(x, y); // 移到迷宮出口
+		ctx.lineWidth = 5; //線條寬度		
+		
+		
+	    const text = document.getElementById("textarea").value.toLowerCase();
         const textArr = text.split("\n"); // 以enter換行
         const splitedArr = textArr.map(item => item.split(" "));
-        const filteredArr = splitedArr.filter(item => item.length !== 1);
+		const  filteredArr = splitedArr.filter(item => item.length !== 1);
+       
+		//get dropdown list id and values
+		var selectElement = document.getElementById("selectId");
+		//get random hex color 	
+		if(selectElement.value == "Random")
+		{
+			var letters = '0123456789ABCDEF'.split('');
+			var color = '#';
+			for (var i = 0; i < 6; i++) { 
+				color += letters[Math.round(Math.random() * 15)];
+			}
+			ctx.strokeStyle = color;
+		}		
+		ctx.strokeStyle = selectElement.value;
+		
         filteredArr.forEach(element => {
             // 判斷指令的逗號及空格是否正確
             if (element.length === 3){
@@ -28,7 +54,9 @@ const readAndMove = () => {
          })
         // 判斷方向是否「拼字錯誤」，才畫線及清空
         let flag = true; 
+		
         filteredArr.forEach(element => {
+		
             if(element[0] === "up" || element[0] === "down" || element[0] === "left" || element[0] === "right"){
 
             }
@@ -37,21 +65,22 @@ const readAndMove = () => {
             }
         })
         if(flag){
-            filteredArr.forEach(element => {
+            filteredArr.forEach(element => {						
                 calculate(element[0], element[1]); 
-                document.getElementById("textarea").value = ""; 
-                ctx.lineTo(x, y); // 移到目標座標
-                ctx.stroke(); // 畫線           
-            });
+                document.getElementById("textarea").value = "";			
+				ctx.lineTo(x, y); // 移到目標座標	
+                ctx.stroke(); // 畫線 						
+            });	
         }
         else{
             alert("please check the directions");
-        }
+        }			
     }
     catch(error){
         alert(error); // 指令的逗號、空格有誤
     }
 }
+
 
 // 傳入方向、數值，計算新座標
 const calculate = (direction, value) => {

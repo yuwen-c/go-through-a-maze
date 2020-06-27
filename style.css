@@ -1,13 +1,20 @@
 #header{
-    text-align: center;
+	position: center
+	border-radius: 15px;
+    margin:20px;
+	}
+#outerDiv{
+	positoin:center;
+	border-radius: 15px;
+    margin:20px;
 }
-
 #bigDiv{
     position: relative;
+	margin:20px;
 }
 #maze{
-    position: absolute;
+    position: absolute;	
 } 
 #canvas1{
-    position: absolute;
+    position: absolute;	
 }

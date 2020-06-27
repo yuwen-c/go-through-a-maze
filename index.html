@@ -9,11 +9,25 @@
 <body>
     <div id="header">
         <h2>go through a maze</h2>  
-        <textarea id="textarea" rows="4" cols="40" 
-        placeholder="down 1 step,&#10right 1 step,&#10up 1 step,&#10right 3 steps"></textarea>
+        <textarea id="textarea" rows="6" cols="40" 
+        placeholder="Please enter your steps:  &#10;Example:&#10;down 1 step, &#10;right 2 steps,&#10;up 3 steps,&#10;...etc."></textarea>
+		
+		<h3>Choose Color</h3> 
+		<select name= "color" id="selectId">
+		<option value ="#0000ff">Blue</option>
+		<option value ="#00ff00">Green</option>
+		<option value ="#ff0000">Red</option>
+		<option value ="#ffff00">Yellow</option>
+		<option value ="#ffc0cb">Pink</option>
+		<option value ="#FFA500">Orange</option>
+		<option value ="Random">Random</option>
+		</select>	
+	<br/><br/>
         <input id="inputButton" type="button" value="submit" 
         onclick="readAndMove()">
     </div>
+	<br/>
+	
     <br/>
 
     <div id="outerDiv">

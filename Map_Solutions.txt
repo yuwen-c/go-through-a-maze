@@ -1,0 +1,129 @@
+layer 0-5:
+down 1 step
+right 1 step
+Up 1 step
+right 3 steps
+down 1 step
+left 1 step
+down 2 steps
+left 3 steps
+down 1 step
+
+layer 6-10:
+right 3 steps,
+down 2 steps,
+right 3 steps,
+down 2 steps,
+right 6 steps,
+up 1 step,
+left 1 step,
+up 1 step,
+right 1 step,
+up 1 step,
+right 1 step,
+down 1 step,
+right 1 step,
+up 1 step,
+right 1 step,
+down 1 step,
+right 2 step,
+down 3 steps
+
+
+layer 11-15:
+ 
+left 1 step
+down 3 steps
+right 1 step
+down 2 steps
+
+Layer 16-20:
+
+down 1 step
+left 1 step
+down 1 step
+right 1 step
+down 2 steps
+left 1 step
+down 1 step
+right 2 step
+up 4 steps
+right 1 step
+up 1 step
+left 1 step
+up 1 step
+right 1 step
+up 1 step
+left 1 step
+up 1 step
+left 1 step
+up 1 step
+right 1 step
+up 1 step
+right 1 step
+up 1 step
+left 1 step
+up 1 step
+right 2 steps
+down 2 steps
+right 1 step
+down 1 step
+left 1 step
+down 1 step
+right 2 steps
+down 1 step
+left 2 steps
+down 2 steps
+right 2 steps
+down 1 step
+right 1 step
+down 1 step
+right 2 steps
+down 2 steps
+left 1 step
+down 1 step
+right 1 step
+
+layer 21-25:
+down 2 steps
+left 2 steps
+up 1 step
+left 2 steps
+down 1 step
+left 1 step
+down 1 step
+left 2 steps
+down 1 step
+left 1 step
+up 3 steps
+left 2 steps
+down 1 step
+left 1 step
+up 1 step
+left 1 step
+down 2 steps
+right 2 steps
+down 1 step
+left 2 steps
+down 1 step
+left 1 step
+up 1 step
+left 2 steps
+down 1 step
+right 1 step
+down 1 step
+
+layer 26-30:
+
+layer 31-35:
+
+layer 36-40:
+
+layer 41-45:
+
+layer 46-50:
+
+
+
+
+
