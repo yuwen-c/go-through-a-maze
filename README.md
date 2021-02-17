@@ -6,7 +6,7 @@
 
 - However, with those commands, it was inconvenient to see "where were we now", so I built this web page to let everyone could see it visually with the previous commands. 
 
-- A team mate Judy-S helped to add color on it, anyone can chose a color and turned to be more clear. Thank you Judy-S! 🤩
+- A team mate Judy-S helped to add color on it, anyone can chose a color and turned to be more clear. Thank you @Judy-S! 🤩
 
 
 ## features
