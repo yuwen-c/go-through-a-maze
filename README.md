@@ -11,6 +11,11 @@
 
 - 一位團友[Judy-S](https://github.com/Judy-S)還幫我加上顏色！謝謝 [Judy-S](https://github.com/Judy-S)! 🤩
 
+<div align="center">
+  <img src="maze_path.png" alt="maze path" width="500px" />
+  <br>
+</div>
+
 # about this project
 
 - My friends and I wanted to practice git commands, since everyone used different lenguage, one of them came up with that -- let's practice with going through a maze, all you need to do is type like "down 1 step, right 2 steps...".👏
