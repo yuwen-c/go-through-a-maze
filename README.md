@@ -9,7 +9,7 @@
 
 - 但我們遇到一個麻煩，光是看前面的人的commands，不知道已經走到哪裡了...所以我做了這個迷宮模擬器，將路線「視覺化」，方便團友操作。
 
-- 一位團友[Judy-S](https://github.com/Judy-S)還幫我加上顏色！謝謝 [Judy-S](https://github.com/Judy-S)! 🤩
+- 一位團友[Judy-S](https://github.com/Judy-S)還幫我加上選顏色的功能，可以讓每個人的路線看得更清楚！謝謝你 [Judy-S](https://github.com/Judy-S)! 🤩
 
 <div align="center">
   <img src="maze_path.png" alt="maze path" width="500px" />
