@@ -11,10 +11,6 @@
 
 - 一位團友[Judy-S](https://github.com/Judy-S)還幫我加上選顏色的功能，可以讓每個人的路線看得更清楚！謝謝你 [Judy-S](https://github.com/Judy-S)! 🤩
 
-<div align="center">
-  <img src="maze_path.png" alt="maze path" width="500px" />
-  <br>
-</div>
 
 # about this project
 
@@ -29,3 +25,8 @@
 
 # features
 ✨ draw with **HTML canvas**
+
+<div align="center">
+  <img src="maze_path.png" alt="maze path" width="500px" />
+  <br>
+</div>
